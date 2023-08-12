@@ -14,7 +14,7 @@
       </li>
     </ul>
 
-    <nav id="header-auth" class="header-nav is-hidden">
+    <nav id="header-auth" class="header-nav is-display">
       <ul class="header-nav-list">
         <li class="header-nav-item active-home active">
           <a class="header-nav-link" href="/src/main.html">HOME</a>
@@ -49,24 +49,31 @@
         </label>
       </div>
       <!-- desktop btn -->
-      <button class="header-open-modal-btn" type="button" alt="sign-up-button">
-        <span id="btnOpenModal" class="btn-txt">sing up</span>
+      <button
+        class="header-open-modal-btn"
+        type="button"
+        aria-label="sign-up-button"
+      >
+        <span id="btnOpenModal" class="btn-txt">sign up</span>
         <svg class="btn-arrow">
-          <use href="./img/symbol-defs.svg#icon-arrow-narrow-right"></use>
-        </svg>
-        <svg class="header-modal-svg">
-          <use href="./img/symbol-defs.svg#icon-user"></use>
+          <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
         </svg>
       </button>
 
       <!-- mobile & tabl btn -->
-      <button class="header-btn sub js-header-open-modal">
+      <button
+        class="header-btn sub js-header-open-modal"
+        aria-label="open-mobile-menu-button"
+      >
         <svg class="header-btn-svg">
           <use href="./img/symbol-defs.svg#icon-mobile-menu"></use>
         </svg>
       </button>
 
-      <button class="header-mobile-close js-header-close is-hidden">
+      <button
+        class="header-mobile-close js-header-close is-hidden"
+        aria-label="close-mobile-menu-button"
+      >
         <svg class="header-mobile-svg">
           <use href="./img/symbol-defs.svg#icon-close"></use>
         </svg>
@@ -77,7 +84,7 @@
   <!-- mobile header menu -->
   <div class="header-mobile-menu js-mobile-menu">
     <div class="menu-btn-container">
-      <ul class="menu-btn-list">
+      <ul class="header-nav menu-btn-list is-display">
         <li class="menu-btn-item active-home active">
           <a href="/src/main.html">Home</a>
         </li>
@@ -90,6 +97,16 @@
           ></a>
         </li>
       </ul>
+      <button
+        class="header-open-modal-btn second"
+        type="button"
+        aria-label="sign-up-button"
+      >
+        <span id="btnOpenModal" class="btn-txt">sign up</span>
+        <svg class="btn-arrow">
+          <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
     </div>
 
     <img class="mobile-img" src="./img/mobile-bgc.png" alt="" />
